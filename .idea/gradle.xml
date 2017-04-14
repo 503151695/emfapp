@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AMap_Location_V3.3.0_20170118" />
+            <option value="$PROJECT_DIR$/AMap_Search_V4.0.0_20170111" />
+            <option value="$PROJECT_DIR$/Amap_2DMap_V4.2.0_20170120" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dJISDKLIB" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

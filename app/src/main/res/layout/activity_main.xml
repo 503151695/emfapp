@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.stt.stt_eegs_pro.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ConnectStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OS-2无人机载电磁环境监测系统"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/locate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Locate"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Config"
+                    android:layout_weight="0.9"/>
+                <Button
+                    android:id="@+id/prepare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prepare"
+                    android:layout_weight="0.9"/>
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/datashow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.amap.api.maps2d.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        //--set module
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高度（起始点高度）："/>
+            <EditText
+                android:id="@+id/et_hight"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:hint="请输入高度"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纬度："/>
+            <EditText
+                android:id="@+id/et_lati"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:hint="点击获取或手动输入"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经度："/>
+            <EditText
+                android:id="@+id/et_longi"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:hint="点击获取或手动输入"/>
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_speed"/>
+            <SeekBar
+                android:id="@+id/seekbar_speed"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="5"
+                style="@style/Widget.AppCompat.SeekBar" />
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_point"/>
+            <SeekBar
+                android:id="@+id/seekbar_point"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:progress="8"
+                style="@style/Widget.AppCompat.SeekBar" />
+            <TextView
+                android:id="@+id/tv_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_interval"/>
+            <SeekBar
+                android:id="@+id/seekbar_interval"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:progress="5"
+                style="@style/Widget.AppCompat.SeekBar" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_time"/>
+            <SeekBar
+                android:id="@+id/seekbar_time"
+                android:layout_width="620px"
+                android:layout_height="wrap_content"
+                android:max="180"
+                android:progress="5"
+                style="@style/Widget.AppCompat.SeekBar" />
+            <Button
+                android:id="@+id/prepare_fly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="航线规划"/>
+            <Button
+                android:id="@+id/start_fly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起飞并开始监测"/>
+            <Button
+                android:id="@+id/locate_fly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取当前无人机位置"/>
+
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

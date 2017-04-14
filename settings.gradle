@@ -1,0 +1,2 @@
+include ':app', ':Amap_2DMap_V4.2.0_20170120', ':AMap_Search_V4.0.0_20170111', ':AMap_Location_V3.3.0_20170118'
+include ':dJISDKLIB'

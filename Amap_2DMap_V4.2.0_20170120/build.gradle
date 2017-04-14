@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('Amap_2DMap_V4.2.0_20170120.jar'))

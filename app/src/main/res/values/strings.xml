@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">STT_Eegs_pro</string>
+    <string name="text_speed">飞行速度（m/s）</string>
+    <string name="text_point">采集点数（个）</string>
+    <string name="text_interval">高度间隔（m）</string>
+    <string name="text_time">采集时间（s）</string>
+</resources>
